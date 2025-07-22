@@ -73,10 +73,11 @@ class RestaurantManagementSystem:
                 if quantity > 0:
                     order_summary += f"{item}: {quantity} x {symbol}{price} = {symbol}{cost}\n"
         if total_cost > 0:
-            order_summary += f"\nTotal Cost: {symbol}{total_cost}"            
+            order_summary += f"\nTotal Cost: {symbol}{total_cost}"
             messagebox.showinfo("Order Placed", order_summary)
         else:
             messagebox.showerror("Error", "Please Order At Least 1 Item")
+
 
 if __name__ == '__main__':
     root = tk.Tk()
